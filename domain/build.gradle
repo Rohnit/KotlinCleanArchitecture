@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation Libraries.kotlin_stdlib
+    implementation Libraries.rxkotlin
+
+    implementation Libraries.inject
+
+
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/kotlin']
+    }
+}
+
+/*sourceCompatibility = "1.7"
+targetCompatibility = "1.7"*/
